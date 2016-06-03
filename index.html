@@ -14,121 +14,127 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>Trek Genie</h1>
-      </header>
-      <h2>Discover your travel destiny </h2>
-      <p>
-        Simply fill out the fields below and our Trek Genie will reveal your travel prophesy.
-      </p>
-      <form id="travel-survey">
-        <div class="radio">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3"
+          <header>
+            <h1>Trek Genie</h1>
+            <img src ="img/genie-Lamp.png"
+          </header>
+        
+          <h2>Discover your travel destiny </h2>
           <p>
-            <strong>What type of environment do you feel happiest in …</strong>
+            Simply fill out the fields below and our Trek Genie will reveal your travel prophesy.
           </p>
-          <label>
-            <input type="radio" name="environment" value="city" checked>
-            Bustling large city
-          </label>
+          <form id="travel-survey">
+            <div class="radio">
+              <p>
+                <strong>What type of environment do you feel happiest in …</strong>
+              </p>
+              <label>
+                <input type="radio" name="environment" value="city" checked>
+                Bustling large city
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="environment" value="town">
+                Bucolic small town
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="environment" value="wilderness">
+                Scenic wilderness
+              </label>
+            </div>
+            <div class="radio">
+              <p>
+                <strong>Would you rather …</strong>
+              </p>
+              <label>
+                <input type="radio" name="preference" value="city" checked>
+                Eat your way through your vacation
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="preference" value="town">
+                Talk with the locals about why they love where they live
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="preference" value="wilderness">
+                Hike to a majestic falls
+              </label>
+            </div>
+            <div class="radio">
+              <p>
+                <strong>If given the choice, would you spend your best day of the year …</strong>
+              </p>
+              <label>
+                <input type="radio" name="best-day" value="city" checked>
+                Visiting a modern art museum
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="best-day" value="town">
+                Biking lazy scenic trails
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="best-day" value="wilderness">
+                Floating on rushing white water
+              </label>
+            </div>
+            <div class="radio">
+              <p>
+                <strong>If had to pick your last meal would it be …</strong>
+              </p>
+              <label>
+                <input type="radio" name="last-meal" value="city" checked>
+                In a top rated restaurant with a famous chef
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="last-meal" value="town">
+                A modest meal surrounded by friends and family
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="last-meal" value="wilderness">
+                A fresh kill from your most epic hunt ever
+              </label>
+            </div>
+            <div class="radio">
+              <p>
+                <strong>If you needed to travel from A to B and you had your choice would you …</strong>
+              </p>
+              <label>
+                <input type="radio" name="fun" value="city" checked>
+                Call an uber
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="fun" value="town">
+                Ride a scooter
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="fun" value="wilderness">
+                Walk
+              </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="environment" value="town">
-            Bucolic small town
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="environment" value="wilderness">
-            Scenic wilderness
-          </label>
-        </div>
-        <div class="radio">
-          <p>
-            <strong>Would you rather …</strong>
-          </p>
-          <label>
-            <input type="radio" name="preference" value="city" checked>
-            Eat your way through your vacation
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="preference" value="town">
-            Talk with the locals about why they love where they live
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="preference" value="wilderness">
-            Hike to a majestic falls
-          </label>
-        </div>
-        <div class="radio">
-          <p>
-            <strong>If given the choice, would you spend your best day of the year …</strong>
-          </p>
-          <label>
-            <input type="radio" name="best-day" value="city" checked>
-            Visiting a modern art museum
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="best-day" value="town">
-            Biking lazy scenic trails
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="best-day" value="wilderness">
-            Floating on rushing white water
-          </label>
-        </div>
-        <div class="radio">
-          <p>
-            <strong>If had to pick your last meal would it be …</strong>
-          </p>
-          <label>
-            <input type="radio" name="last-meal" value="city" checked>
-            In a top rated restaurant with a famous chef
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="last-meal" value="town">
-            A modest meal surrounded by friends and family
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="last-meal" value="wilderness">
-            A fresh kill from your most epic hunt ever
-          </label>
-        </div>
-        <div class="radio">
-          <p>
-            <strong>If you needed to travel from A to B and you had your choice would you …</strong>
-          </p>
-          <label>
-            <input type="radio" name="fun" value="city" checked>
-            Call an uber
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="fun" value="town">
-            Ride a scooter
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="fun" value="wilderness">
-            Walk
-          </label>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      </div>
       <div class="output">
         <div id="berlin" class="hide">
           <h3>Berlin, Germany</h3>
@@ -145,7 +151,7 @@
           <img src="img/wind-river-range.jpg" alt="Windriver, WY" class="img-responsive"/>
           <p>In a range renowned for its incredible peaks-to-people ratio, we’ve scouted the loneliest route of all, in a swath of wild country where lakes sparkle in deep, granite-walled valleys hard up against the rock and ice of the Continental Divide. Begin a loop of 50 miles from Meadow Lake trailhead, south of Pinedale on the west side of the Winds. It’s a hard 12 miles and 2,500 feet to Timico Lake, but the camping is “epic 360-blue-sky-and-toothy-peaks stuff,” says our well-traveled Editor-in-Chief. It’s also a grand introduction because “there are easily a half-dozen views that rank among my lifetime top 50.” From Timico on day two, follow an unofficial use trail two miles to the Divide at 11,280-foot Fall Creek Pass and continue four miles cross-country to Camp Lake—despite the name, don’t camp there. Continue a bit more than a mile to a more ideal site in the 11,000-foot-high, glacially carved valley of the Alpine Lakes, flanked by soaring peaks. From here, dayhike six miles to Alpine Lakes Pass overlooking the Knifepoint Glacier. Return to the trailhead via 10,960-foot Hay Pass and the CDT. Local knowledge Hike in early fall to avoid mosquitoes, but don’t dally. Elk season opens the third week of September, and hunters’ pack trains arrive as much as a week in advance to set up backcountry camps. Just prior to that, you’ll find peak autumn color and ideal weather before the trails become horse-crap-clodded. - See more at: http://www.backpacker.com/trips/wyoming/america-s-best-kept-secrets-wind-river-range-wy/#sthash.eBkFrhrN.dpuf</p>
         </div>
-        <div id="resubmit">
+        <div id="resubmit" class="hide">
           <h3>Whoa! The Genie doesn't feel confident he knows the right destination for you. Please try changing one or more of your answers and resubmitting the form.</h3>
           <img src="img/genie.jpg"
         </div>
