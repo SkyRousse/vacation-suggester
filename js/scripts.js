@@ -62,17 +62,17 @@ $(function() {
       totalWilderness += 1;
     }
 
-    if (totalCity > totalTown && totalCity > totalWilderness) {
+    if (totalCity >= totalTown && totalCity >= totalWilderness && environment === "city") {
       $("#berlin").show();
     }
-    else if (totalTown > totalCity && totalTown > totalWilderness) {
+    else if (totalTown >= totalCity && totalTown >= totalWilderness && environment === "town") {
       $("#boonville").show();
     }
-    else if (totalWilderness > totalCity && totalWilderness > totalTown) {
+    else if (totalWilderness >= totalCity && totalWilderness >= totalTown && environment === "wilderness") {
       $("#windriver").show();
     }
     else {
-      $("#windriver").show();
+      $("#resubmit").show();
     }
   })
 });
