@@ -6,3 +6,8 @@
 .show {
   display: inline-block;
 }
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+}

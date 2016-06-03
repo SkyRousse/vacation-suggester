@@ -10,7 +10,7 @@ $(function() {
     var totalCity = 0;
     var totalTown = 0;
     var totalWilderness = 0;
-    //debugger;
+    debugger;
 
     // conditional to check if something needs hidden on form submission
     if ($("#berlin").hasClass("show")) {
@@ -79,11 +79,23 @@ $(function() {
     // end add values
 
     //begin conditionals to determine what is revealed
-    if (totalCity >= totalTown && totalCity >= totalWilderness && environment === "city") {
+    if (totalCity > totalTown && totalCity > totalWilderness) {
       $("#berlin").addClass("show");
+    }
+    else if (totalCity >= totalTown && totalCity >= totalWilderness && environment === "city") {
+      $("#berlin").addClass("show");
+    }
+    else if (totalTown > totalCity && totalTown > totalWilderness) {
+      $("#boonville").addClass("show");
     }
     else if (totalTown >= totalCity && totalTown >= totalWilderness && environment === "town") {
       $("#boonville").addClass("show");
+    }
+    else if (totalWilderness > totalCity && totalWilderness > totalTown) {
+      $("#windriver").addClass("show");
+    }
+    else if (totalWilderness > totalCity && totalWilderness > totalTown) {
+      $("#windriver").addClass("show");
     }
     else if (totalWilderness >= totalCity && totalWilderness >= totalTown && environment === "wilderness") {
       $("#windriver").addClass("show");
