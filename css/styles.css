@@ -1,13 +1,40 @@
-/*This file is for your custom css.  All yours*/
-.hide {
-  display: none;
+header h1 {
+  text-transform: uppercase;
+  text-shadow: 2px 2px #7D7979;
+  color: #303265;
 }
-
-.show {
-  display: inline-block;
-}
-
 footer {
   text-align: center;
   margin-top: 60px;
+}
+h2 {
+  color: #695786;
+  text-transform: capitalize;
+}
+.hide {
+  display: none;
+}
+.radio p {
+  margin-top: 30px;
+  color: #303265;
+  font-size: 18px;
+}
+.show {
+  display: inline-block;
+}
+.output img {
+  margin-bottom: 20px;
+}
+#travel-survey button[type=submit] {
+   margin-top: 20px;
+   background-color: #8284B7;
+   color: #fff;
+}
+#travel-survey button[type=submit]:hover {
+  background-color: #fff;
+  color: #8284B7;
+  border-color: #8284B7;
+}
+#travel-survey label {
+  font-size: 15px;
 }
