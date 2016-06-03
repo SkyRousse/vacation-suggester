@@ -1,4 +1,8 @@
 /*This file is for your custom css.  All yours*/
-#boonville, #windriver, #berlin, #resubmit {
+.hide {
   display: none;
+}
+
+.show {
+  display: inline-block;
 }

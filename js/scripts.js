@@ -10,8 +10,20 @@ $(function() {
     var totalCity = 0;
     var totalTown = 0;
     var totalWilderness = 0;
-    debugger;
+    //debugger;
 
+    // conditional to check if something needs hidden on form submission
+    if ($("#berlin").hasClass("show")) {
+      $("#berlin").removeClass("show");
+    };
+    if ($("#boonville").hasClass("show")) {
+      $("#boonville").removeClass("show");
+    };
+    if ($("#windriver").hasClass("show")) {
+      $("#windriver").removeClass("show");
+    };
+
+    // begin add values
     if (environment === "city") {
       totalCity += 1;
     }
@@ -60,19 +72,21 @@ $(function() {
     }
     else {
       totalWilderness += 1;
-    }
+    };
+    // end add values
 
+    //begin conditionals to determine what is revealed
     if (totalCity >= totalTown && totalCity >= totalWilderness && environment === "city") {
-      $("#berlin").show();
+      $("#berlin").addClass("show");
     }
     else if (totalTown >= totalCity && totalTown >= totalWilderness && environment === "town") {
-      $("#boonville").show();
+      $("#boonville").addClass("show");
     }
     else if (totalWilderness >= totalCity && totalWilderness >= totalTown && environment === "wilderness") {
-      $("#windriver").show();
+      $("#windriver").addClass("show");
     }
     else {
-      $("#resubmit").show();
+      $("#resubmit").addClass("show");
     }
   })
 });
