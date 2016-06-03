@@ -22,6 +22,9 @@ $(function() {
     if ($("#windriver").hasClass("show")) {
       $("#windriver").removeClass("show");
     };
+    if ($("#resubmit").hasClass("show")) {
+      $("#resubmit").removeClass("show");
+    };
 
     // begin add values
     if (environment === "city") {
