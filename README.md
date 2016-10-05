@@ -1,6 +1,6 @@
-# _Epicodus Portfolio_
+# _Vaction Suggester_
 
-### _This is a practice site built to help me learn basic jQuery and js concepts and logic_
+### _This is a practice site built to help me learn basic jQuery and js concepts and logic as well as some layout and styling using Bootstrap_
 
 #### Created By _**Sky Rousse**_
 
